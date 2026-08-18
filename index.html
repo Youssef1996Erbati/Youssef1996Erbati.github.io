@@ -180,9 +180,9 @@ h3{font-family:var(--display);font-weight:500;font-size:1.12rem;margin:0;letter-
 
 /* timeline */
 .tl{list-style:none;margin:0;padding:0 0 0 24px;border-left:1px solid var(--line)}
-.tl li{position:relative;padding:0 0 34px 4px}
-.tl li:last-child{padding-bottom:0}
-.tl li::before{
+.tl > li{position:relative;padding:0 0 34px 4px}
+.tl > li:last-child{padding-bottom:0}
+.tl > li::before{
   content:"";position:absolute;left:-29px;top:8px;width:9px;height:9px;border-radius:50%;
   background:var(--accent);box-shadow:0 0 0 4px rgba(77,213,247,.14);
 }
