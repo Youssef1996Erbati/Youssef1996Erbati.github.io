@@ -44,8 +44,15 @@ img{max-width:100%;display:block}
   border-bottom:1px solid var(--line);
 }
 .nav__in{display:flex;align-items:center;justify-content:space-between;height:62px}
-.brand{font-family:var(--display);font-weight:700;font-size:1.25rem;letter-spacing:.02em;text-decoration:none}
+.brand{
+  display:flex;align-items:center;gap:9px;
+  font-family:var(--display);font-weight:700;font-size:1.25rem;letter-spacing:.02em;text-decoration:none;
+}
 .brand span{color:var(--accent)}
+.brand img{
+  width:32px;height:32px;border-radius:50%;object-fit:cover;
+  border:1px solid var(--line);flex:none;
+}
 .nav__right{display:flex;align-items:center;gap:14px}
 .nav__links{display:flex;gap:26px}
 .nav__links a{
@@ -257,7 +264,7 @@ footer{
 
 <header class="nav" id="nav">
   <div class="wrap nav__in">
-    <a class="brand" href="#top">YE<span>.</span></a>
+    <a class="brand" href="#top"><img src="photo.jpg" alt="" onerror="this.remove()">YE<span>.</span></a>
     <nav class="nav__links" id="menu">
       <a href="#stack" data-fr="Stack" data-en="Stack">Stack</a>
       <a href="#parcours" data-fr="Parcours" data-en="Experience">Parcours</a>
